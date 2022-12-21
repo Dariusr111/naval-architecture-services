@@ -15,6 +15,7 @@ li {
   color: #FFFFFF;
   margin: 0;
   background-color: #0F1624;
+  min-height: 100%;
 }
 
 .mySlides {
