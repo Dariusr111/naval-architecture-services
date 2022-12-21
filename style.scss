@@ -14,7 +14,8 @@ li {
     width: 100%;
     color: #FFFFFF;
     margin: 0;
-    background: green no-repeat center center fixed;
+    background-color: #0F1624;
+    // background: green no-repeat center center fixed;
     // overflow-x: hidden;
     // background-image: url("./pics/night-ship.jpg");
     // background-repeat: no-repeat;
@@ -56,20 +57,23 @@ img {
 
 .fl-1 {
     width: 25px;
-    height: 50px;
+    height: 40px;
     background-color: #d1ccb6;
+    margin-left: 30px;
 }
 
 .fl-2 {
     width: 25px;
-    height: 50px;
+    height: 40px;
     background-color: #b3b28d;
+    margin-left: 30px;
 }
 
 .fl-3 {
     width: 25px;
-    height: 50px;
+    height: 40px;
     background-color: #5f635a;
+    margin-left: 30px;
 }
 
 
@@ -146,20 +150,24 @@ img {
 
 .ship-icon {
     img {
-        height: 70px;
+        height: 100px;
         width: 100px;
+        border-radius: 50px;
     }
+
+    margin-right: 30px;
 
 
 }
+
 // ============================ Article ============================
 
 //  .main1 {
-    // background-image: url("./pics/night-ship.jpg");
-    // background-repeat: no-repeat;
-    // background-size: 100% auto;
-    // background-position: 35% 0px;
-    // background-attachment: local;
+// background-image: url("./pics/night-ship.jpg");
+// background-repeat: no-repeat;
+// background-size: 100% auto;
+// background-position: 35% 0px;
+// background-attachment: local;
 //  }
 
 /* Slideshow container */
@@ -167,15 +175,22 @@ img {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+
+    img {
+        height: 650px;
+
+    }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -188,41 +203,48 @@ img {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
     color: #f2f2f2;
-    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -231,30 +253,77 @@ img {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 
 
 // ============================ Footer ============================
 
-// .footer1 {
-//     background: #0F1624;
-// }
+.footer1 {
+    background: #0F1624;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    a {
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
 
 
-
+}
