@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+    // max-width: 0 auto;
 }
 
 li {
@@ -146,14 +146,35 @@ img {
 }
 
 .ship-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 45px;
     img {
-        height: 100px;
-        width: 100px;
-        border-radius: 50px;
+        height: 55px;
     }
 
-    margin-right: 30px;
+    h4 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        /* identical to box height */
+        color: #FFFFFF; 
 
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 11px;
+        /* identical to box height */
+        color: #FFFFFF;
+        margin-top: -5px;
+        white-space: nowrap;
+    
+    }
 
 }
 
