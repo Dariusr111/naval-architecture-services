@@ -270,7 +270,13 @@ img {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  /* identical to box height */
+  color: #FFFFFF;
+}
+.footer1 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
   color: #FFFFFF;
 }
 .footer1 a:link {
