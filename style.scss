@@ -638,6 +638,8 @@ img {
         left: -1px;
     }
 
+      // =====================Hamburger menu end============================
+
 
 
     // ======================= Article =====================
@@ -814,12 +816,16 @@ img {
         border-left: 40px solid #0F1624;
         width: 0;
     }
+}
 
+@media(max-width:480px) {
 
+    .mySlides {
+        display: none;
 
-
-
-
-
+        img {
+            height: 250px;
+        }
+    }
 
 }
