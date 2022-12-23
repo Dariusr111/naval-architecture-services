@@ -98,7 +98,6 @@ img {
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
   gap: 58px;
   padding-bottom: 10px;
   white-space: nowrap;
@@ -526,6 +525,7 @@ img {
   }
   .nav-menu {
     position: fixed;
+    height: 100%;
     left: 100%;
     top: 151px;
     gap: 15px;
@@ -559,7 +559,7 @@ img {
     color: #FFFFFF;
   }
   .nav-menu.active {
-    left: 0;
+    left: -1px;
   }
   .slideshow-container {
     max-width: 80%;

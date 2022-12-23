@@ -109,7 +109,7 @@ img {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     gap: 58px;
     padding-bottom: 10px;
     white-space: nowrap;
@@ -533,7 +533,7 @@ img {
     .body {
         margin: 0 auto;
     }
-// =====================Navigation bar============================
+    // =====================Navigation bar============================
     .side-list {
         display: flex;
     
@@ -553,7 +553,7 @@ img {
     }
     
     .flag {
-        
+
         padding-right: 70px;
     }
     .list {
@@ -594,13 +594,14 @@ img {
     .nav-menu {
 
         position: fixed;
+        height: 100%;
         left: 100%;
         top: 151px;
         gap: 15px;
         padding-top: 30px;
         padding-bottom: 30px;
         flex-direction: column;
-        text-align: center;     
+        text-align: center;   
         background-color: #0F1624;
         width: 100%;
         transition: 0.3s;
@@ -634,7 +635,7 @@ img {
     }
 
     .nav-menu.active {
-        left: 0;
+        left: -1px;
     }
 
 
