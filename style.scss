@@ -73,9 +73,6 @@ img {
     margin-left: 30px;
 }
 
-
-
-
 .side-list {
     display: flex;
 
@@ -114,8 +111,6 @@ img {
     display: flex;
     justify-content: space-between;
     gap: 58px;
-    padding-left: 42px;
-    padding-right: 140px;
     padding-bottom: 10px;
     white-space: nowrap;
 
@@ -145,6 +140,65 @@ img {
     }
 }
 
+// ============ Hamburger ==============
+
+.nav-item {
+    padding-left: 50
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-item-hid {
+    display: none;
+}
+
+
+.menu a:hover {
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(90deg, #945dd6 0%, #6978d1 40%, #13adc7 80%);
+    border-image-slice: 1;
+    transition: all 0.5s
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: white;
+}
+
+
+#nav-burger {
+    border: none;
+    padding: 2px;
+    background-color: #0F1624;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    right: auto;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+// ================ Hamburger end =================
+
 .ship-icon {
     display: flex;
     flex-direction: column;
@@ -161,7 +215,7 @@ img {
         font-weight: 500;
         font-size: 30px;
         /* identical to box height */
-        color: #FFFFFF; 
+        color: #FFFFFF;
         white-space: nowrap;
 
     }
@@ -175,7 +229,7 @@ img {
         color: #FFFFFF;
         margin-top: -5px;
         white-space: nowrap;
-    
+
     }
 
 }
@@ -193,7 +247,6 @@ img {
 
 .article1 {
     // position: relative;
-    height: 800px;
     margin-top: 150px;
     padding-top: 50px;
 }
@@ -342,6 +395,7 @@ img {
         font-size: 16px;
         color: #FFFFFF;
     }
+
     a:link {
         text-decoration: none;
     }
@@ -375,7 +429,8 @@ img {
 .projects1::before {
     content: '';
     position: absolute;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     border-top: 40px solid #b3b28d;
     border-left: 40px solid #0F1624;
     width: 0;
@@ -397,15 +452,16 @@ img {
 .explore1::before {
     content: '';
     position: absolute;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     border-top: 40px solid #b3b28d;
     border-left: 40px solid #0F1624;
     width: 0;
 }
 
 .contact1 {
-    height: 300px;   
-    width: 20vw; 
+    height: 300px;
+    width: 20vw;
     position: relative;
     margin-bottom: 30px;
     border-left: #b3b28d solid 1px;
@@ -418,13 +474,14 @@ img {
 .contact1::before {
     content: '';
     position: absolute;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     border-top: 40px solid #b3b28d;
     border-left: 40px solid #0F1624;
     width: 0;
 }
 
- .follow1 {
+.follow1 {
     height: 300px;
     width: 20vw;
     position: relative;
@@ -434,18 +491,19 @@ img {
     border-right: #b3b28d solid 1px;
     border-bottom: #b3b28d solid 1px;
     padding: 20px;
- }
+}
 
- .follow1::before {
+.follow1::before {
     content: '';
     position: absolute;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     border-top: 40px solid #b3b28d;
     border-left: 40px solid #0F1624;
     width: 0;
 }
 
- .signoff1 {
+.signoff1 {
     height: 300px;
     width: 20vw;
     position: relative;
@@ -455,12 +513,13 @@ img {
     border-right: #b3b28d solid 1px;
     border-bottom: #b3b28d solid 1px;
     padding: 20px;
- }
+}
 
- .signoff1::before {
+.signoff1::before {
     content: '';
     position: absolute;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     border-top: 40px solid #b3b28d;
     border-left: 40px solid #0F1624;
     width: 0;
@@ -474,6 +533,109 @@ img {
     .body {
         margin: 0 auto;
     }
+// =====================Navigation bar============================
+    .side-list {
+        display: flex;
+    
+        ul {
+            padding-top: 15px;
+        }
+
+        a {
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+    }
+    
+    .flag {
+        
+        padding-right: 70px;
+    }
+    .list {
+        display: none;
+    }
+
+    // =====================Hamburger menu============================
+
+    /* hamburgeris */
+    .hamburger {
+        display: block;
+        margin: 35px;
+    }
+
+    .bar {
+        display: flex;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+
+        position: fixed;
+        left: 100%;
+        top: 151px;
+        gap: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        text-align: center;     
+        background-color: #0F1624;
+        width: 100%;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .nav-item {
+
+        a {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 18px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+    }
+
+    .nav-item-hid {
+        display: block;
+        padding-bottom: 25px;
+
+        a {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
 
 
 
@@ -483,10 +645,10 @@ img {
         max-width: 80%;
         position: relative;
         margin: auto;
-    
+
     }
 
-        /* Hide the images by default */
+    /* Hide the images by default */
     .mySlides {
         display: none;
 
@@ -494,7 +656,7 @@ img {
             height: auto;
 
         }
-}
+    }
 
     // ======================= Footer =====================
     .footer1 {
@@ -503,8 +665,8 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 0px;
-       
+
+
         h5 {
             font-family: 'Poppins';
             font-style: normal;
@@ -512,7 +674,7 @@ img {
             font-size: 20px;
             color: #FFFFFF;
         }
-    
+
         a {
             font-family: 'Poppins';
             font-style: normal;
@@ -520,7 +682,7 @@ img {
             font-size: 16px;
             color: #FFFFFF;
         }
-    
+
         p {
             font-family: 'Poppins';
             font-style: normal;
@@ -528,42 +690,44 @@ img {
             font-size: 16px;
             color: #FFFFFF;
         }
+
         a:link {
             text-decoration: none;
         }
-    
+
         a:visited {
             text-decoration: none;
         }
-    
+
         a:hover {
             text-decoration: none;
         }
-    
+
         a:active {
             text-decoration: none;
         }
     }
-    
+
     .projects1 {
         height: 280px;
         width: 250px;
         position: relative;
         margin-bottom: 30px;
         padding: 20px;
-    
+
     }
-    
+
     .projects1::before {
         content: '';
         position: absolute;
-        top: 0; right: 0;
+        top: 0;
+        right: 0;
         border-top: 40px solid #b3b28d;
         border-left: 40px solid #0F1624;
         width: 0;
     }
-    
-    
+
+
     .explore1 {
         height: 280px;
         width: 250px;
@@ -575,18 +739,19 @@ img {
         border-bottom: #b3b28d solid 1px;
         padding: 20px;
     }
-    
+
     .explore1::before {
         content: '';
         position: absolute;
-        top: 0; right: 0;
+        top: 0;
+        right: 0;
         border-top: 40px solid #b3b28d;
         border-left: 40px solid #0F1624;
         width: 0;
     }
-    
+
     .contact1 {
-        height: 280px;   
+        height: 280px;
         width: 250px;
         position: relative;
         margin-bottom: 30px;
@@ -596,17 +761,18 @@ img {
         border-bottom: #b3b28d solid 1px;
         padding: 20px;
     }
-    
+
     .contact1::before {
         content: '';
         position: absolute;
-        top: 0; right: 0;
+        top: 0;
+        right: 0;
         border-top: 40px solid #b3b28d;
         border-left: 40px solid #0F1624;
         width: 0;
     }
-    
-     .follow1 {
+
+    .follow1 {
         height: 280px;
         width: 250px;
         position: relative;
@@ -615,18 +781,19 @@ img {
         border-right: #b3b28d solid 1px;
         border-bottom: #b3b28d solid 1px;
         padding: 20px;
-     }
-    
-     .follow1::before {
+    }
+
+    .follow1::before {
         content: '';
         position: absolute;
-        top: 0; right: 0;
+        top: 0;
+        right: 0;
         border-top: 40px solid #b3b28d;
         border-left: 40px solid #0F1624;
         width: 0;
     }
-    
-     .signoff1 {
+
+    .signoff1 {
         height: 280px;
         width: 250px;
         position: relative;
@@ -635,17 +802,18 @@ img {
         border-right: #b3b28d solid 1px;
         border-bottom: #b3b28d solid 1px;
         padding: 20px;
-     }
-    
-     .signoff1::before {
+    }
+
+    .signoff1::before {
         content: '';
         position: absolute;
-        top: 0; right: 0;
+        top: 0;
+        right: 0;
         border-top: 40px solid #b3b28d;
         border-left: 40px solid #0F1624;
         width: 0;
     }
-    
+
 
 
 
@@ -654,5 +822,3 @@ img {
 
 
 }
-
-
