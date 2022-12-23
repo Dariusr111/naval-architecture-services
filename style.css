@@ -49,21 +49,21 @@ img {
 }
 
 .fl-1 {
-  width: 25px;
+  width: 20px;
   height: 40px;
   background-color: #d1ccb6;
   margin-left: 30px;
 }
 
 .fl-2 {
-  width: 25px;
+  width: 20px;
   height: 40px;
   background-color: #b3b28d;
   margin-left: 30px;
 }
 
 .fl-3 {
-  width: 25px;
+  width: 20px;
   height: 40px;
   background-color: #5f635a;
   margin-left: 30px;
@@ -477,6 +477,14 @@ img {
   width: 0;
 }
 
+.linkedin {
+  margin-top: 10px;
+}
+
+.facebook {
+  margin-top: 20px;
+}
+
 @media (max-width: 1080px) {
   .body {
     margin: 0 auto;
@@ -514,13 +522,13 @@ img {
     transition: all 0.3s ease-in-out;
     background-color: white;
   }
-  .hamburger.active .bar:nth-child(2) {
+  .hamburger.active-h .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active .bar:nth-child(1) {
+  .hamburger.active-h .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(3) {
+  .hamburger.active-h .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
   .nav-menu {
@@ -558,7 +566,7 @@ img {
     /* identical to box height */
     color: #FFFFFF;
   }
-  .nav-menu.active {
+  .nav-menu.active-h {
     left: -1px;
   }
   .slideshow-container {
@@ -713,6 +721,6 @@ img {
     display: none;
   }
   .mySlides img {
-    height: 250px;
+    height: 230px;
   }
 }/*# sourceMappingURL=style.css.map */
