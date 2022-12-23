@@ -485,6 +485,10 @@ img {
   margin-top: 20px;
 }
 
+.instagram {
+  margin-top: 20px;
+}
+
 @media (max-width: 1080px) {
   .body {
     margin: 0 auto;
