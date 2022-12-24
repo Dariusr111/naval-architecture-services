@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1e48e2a57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   SERVICES. IN PROGRESS 
+    <div class="body">
+        <header>
+            <nav class="nav">
+
+                <div class="side-list">
+                    <div class="flag">
+                        <div class="fl-1"></div>
+                        <div class="fl-2"></div>
+                        <div class="fl-3"></div>
+                    </div>
+
+                    <ul class="list">
+                        <li class="nav-item"><a href="/naval-architecture-services/index.html">Naval architecture</a></li>
+                        <li class="nav-item"><a href="/naval-architecture-services/index.html">Design</a></li>
+                        <li class="nav-item"><a href="/naval-architecture-services/index.html">Engineering</a></li>
+                    </ul>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="/naval-architecture-services/projects.html">Projects</a></li>
+                    <li class="nav-item"><a href="/naval-architecture-services/services.html">Services</a></li>
+                    <li class="nav-item"><a href="/naval-architecture-services/about.html">About</a></li>
+                    <li class="nav-item"><a href="/naval-architecture-services/index.html">Contact</a></li>
+                </ul>
+
+                <div class="ship-icon">
+                    <div>
+                        <a href="/naval-architecture-services/index.html">
+                            <img src="pics/logo-w3.svg">
+                        </a>
+                    </div>
+                    <div>
+                        <h4>4 SHIPS</h4>
+                    </div>
+                    <div>
+                        <p>E N G I N E E R I N G</p>
+                    </div>
+                </div>
+
+                <div class="hamburger" onclick="preventClose(event)">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <article>
+            <div class="article2">
+                <div class="initial">
+                    <h5>Initial and concept design:</h5>
+                    <ul>
+                        <li>
+                            <p>Technical Specifications</p>
+                        </li>
+                        <li>
+                            <p>Concept Design Drawings</p>
+                        </li>
+                        <li>
+                            <p>Hull Form Definition</p>
+                        </li>
+                        <li>
+                            <p>Weight Estimation</p>
+                        </li>
+                        <li>
+                            <p>Intact and Damage Stability Assesment</p>
+                        </li>
+                        <li>
+                            <p>Speed and propulsion analysis</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="basic">
+                    <h5>Basic design class drawings and reports:</h5>
+                    <ul>
+                        <li>
+                            <p>General design</p>
+                        </li>
+                        <li>
+                            <p>Hull & structure</p>
+                        </li>
+                        <li>
+                            <p>Outfitting & deck equipment</p>
+                        </li>
+                        <li>
+                            <p>Systems</p>
+                        </li>
+                        <li>
+                            <p>Electrical</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="workshop">
+                    <h5>Workshop design:</h5>
+                    <ul>
+                        <li>
+                            <p>Detail design model</p>
+                        </li>
+                        <li>
+                            <p>Detail design drawings</p>
+                        </li>
+                        <li>
+                            <p>Profiles plots</p>
+                        </li>
+                        <li>
+                            <p>Cuting parts nesting</p>
+                        </li>
+                        <li>
+                            <p>Material specifications</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="other-services">
+                    <h5>Other services:</h5>
+                    <ul>
+                        <li>
+                            <p>CFD analysis</p>
+                        </li>
+                        <li>
+                            <p>FEM nalysis</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+
+        <footer>
+            <div>
+
+            </div>
+
+        </footer>
+
+        <script defer>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active-h");
+                navMenu.classList.toggle("active-h");
+            })
+
+            document.querySelectorAll('a').forEach(n => n.addEventListener("click", () => {
+                hamburger.classList.remove("active-h");
+                navMenu.classList.remove("active-h");
+            }))
+
+            document.querySelectorAll("html").forEach(n => n.addEventListener("click", () => {
+                hamburger.classList.remove("active-h")
+                navMenu.classList.remove("active-h")
+            }));
+
+            function preventClose(event) {
+                event.stopPropagation()
+            }
+        </script>
+    </div>
 </body>
+
 </html>
