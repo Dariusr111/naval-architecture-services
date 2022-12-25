@@ -513,6 +513,7 @@ img {
     border-right: #b3b28d solid 1px;
     border-bottom: #b3b28d solid 1px;
     padding: 20px;
+    pointer-events: none;
 }
 
 .signoff1::before {
