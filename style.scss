@@ -538,6 +538,107 @@ img {
     margin-top: 20px; 
  }
 
+
+
+// =====================================SERVICES==================================
+
+
+.article2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+}
+
+
+
+// =====================================PROJECTS==================================
+
+
+
+
+
+// .flex-row {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center; 
+//  }
+
+ .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+    list-style: none;
+}
+
+.image-gallery>li {
+    flex-basis: 45%;
+    /* width: 250px; */
+    padding-bottom: 60px;
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.image-gallery::after {
+    content: "";
+    flex-basis: 250px;
+}
+
+
+
+
 // ============================ MEDIA 1080 ============================
 
 @media(max-width:1080px) {
@@ -829,7 +930,33 @@ img {
         border-left: 40px solid #0F1624;
         width: 0;
     }
+    
+
+
+
 }
+
+// ============================ MEDIA 768 ============================
+@media(max-width:768px) {
+    // =================PROJECTS==================
+    .image-gallery {
+        display: flex;
+        flex-wrap: column;
+        justify-content: center;
+    }
+    
+    .image-gallery>li {
+        flex-basis: 100%;
+        /* width: 100%; */
+
+
+    }
+
+
+
+}
+
+
 
 @media(max-width:480px) {
 
@@ -842,85 +969,5 @@ img {
     }
 
 }
-
-
-
-// =====================================SERVICES==================================
-
-
-.article2 {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 150px;
-    margin-bottom: 40px;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-
-    h5 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        color: #FFFFFF;
-    }
-
-    a {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        color: #FFFFFF;
-    }
-
-    p {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        color: #FFFFFF;
-    }
-
-    a:link {
-        text-decoration: none;
-    }
-
-    a:visited {
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: none;
-    }
-
-    a:active {
-        text-decoration: none;
-    }
-}
-
-
-
-// =====================================PROJECTS==================================
-
-
-
-.flex-col {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; 
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
- }
-
-
-
 
 
