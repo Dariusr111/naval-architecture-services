@@ -316,7 +316,7 @@ img {
 }
 .text1 {
     color: #f2f2f2;
-    padding: 8px 12px;
+    padding: 8px 55px;
     position: absolute;
     bottom: 8px;
     width: 100%;
@@ -650,9 +650,14 @@ img {
 .image-gallery::after {
     content: "";
     flex-basis: 250px;
+
 }
 
+// =====================================ABOUT==================================
 
+.height1 {
+   height: 400px;
+}
 
 
 // ============================ MEDIA 1080 ============================
