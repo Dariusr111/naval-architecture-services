@@ -199,71 +199,71 @@
               <p>All Rights Reserved. Site by <a href="https://www.linkedin.com/in/darius-ruzgys-a43b9a34/"
                   target="_blank">DR</a></p>
             </li>
-            <li><a href="/naval-architecture-services/index.html" title="Privacy Policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="/naval-architecture-services/index.html" title="Privacy Policy">Privacy
+                Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
             <li><a href="/naval-architecture-services/index.html" id="open_preferences_center">Cookie Settings</a></li>
           </ul>
         </div>
       </div>
-
     </footer>
-
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
-
-    <script defer>
-      const hamburger = document.querySelector('.hamburger');
-      const navMenu = document.querySelector('.nav-menu');
-
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active-h");
-        navMenu.classList.toggle("active-h");
-      })
-
-      document.querySelectorAll('a').forEach(n => n.addEventListener("click", () => {
-        hamburger.classList.remove("active-h");
-        navMenu.classList.remove("active-h");
-      }))
-
-      document.querySelectorAll("html").forEach(n => n.addEventListener("click", () => {
-        hamburger.classList.remove("active-h")
-        navMenu.classList.remove("active-h")
-      }));
-
-      function preventClose(event) {
-        event.stopPropagation()
-      }
-    </script>
   </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+  <script defer>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active-h");
+      navMenu.classList.toggle("active-h");
+    })
+
+    document.querySelectorAll('a').forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active-h");
+      navMenu.classList.remove("active-h");
+    }))
+
+    document.querySelectorAll("html").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active-h")
+      navMenu.classList.remove("active-h")
+    }));
+
+    function preventClose(event) {
+      event.stopPropagation()
+    }
+  </script>
 </body>
 
 </html>
