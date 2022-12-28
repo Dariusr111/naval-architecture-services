@@ -579,6 +579,31 @@ img {
   height: 100vh;
 }
 
+.article3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.article3 h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.article3 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
 @media (max-width: 1080px) {
   .body {
     margin: 0 auto;
@@ -809,6 +834,13 @@ img {
     border-left: 40px solid #0F1624;
     width: 0;
   }
+  .contact2 {
+    flex-basis: 100%;
+    height: 250px;
+  }
+  .map {
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 768px) {
   .image-gallery {
@@ -827,5 +859,9 @@ img {
   }
   .mySlides img {
     height: 230px;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
