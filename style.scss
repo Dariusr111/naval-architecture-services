@@ -656,7 +656,7 @@ img {
 // =====================================ABOUT==================================
 
 .height1 {
-   height: 80vh;
+   height: 100vh;
 }
 // =====================================CONTACT==================================
 
@@ -668,7 +668,6 @@ img {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
 
     h5 {
@@ -1035,6 +1034,15 @@ img {
         width: 100%;
         height: 300px;
     }
+
+    .footer1 {
+        display: none;
+    }
+
+    .article3 {
+        justify-content: space-around;
+    }
+    
 
 }
 

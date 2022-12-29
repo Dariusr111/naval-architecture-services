@@ -864,4 +864,10 @@ img {
     width: 100%;
     height: 300px;
   }
+  .footer1 {
+    display: none;
+  }
+  .article3 {
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=style.css.map */
