@@ -873,4 +873,10 @@ img {
   .footer1 {
     display: none;
   }
+  .text {
+    padding: 0px;
+  }
+  .text1 {
+    padding: 2px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1009,15 +1009,9 @@ img {
     .image-gallery>li {
         flex-basis: 100%;
         /* width: 100%; */
-
-
     }
 
-
-
 }
-
-
 
 @media(max-width:480px) {
 
@@ -1046,8 +1040,14 @@ img {
         display: none;
     }
 
+    .text {
+        padding: 0px;
+    }
 
-    
+    .text1 {
+        padding: 2px 20px;
+
+    }
 
 }
 
