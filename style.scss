@@ -665,7 +665,7 @@ img {
     margin-right: 10%;
     margin-top: 150px;
     margin-bottom: 40px;
-    padding-top: 50px;
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -687,10 +687,17 @@ img {
     }
 }
 
+// ============================ MEDIA 1200 ============================
+@media(max-width:1200px) {
+    .footer1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    }
 
-
-
-
+    .signoff1 {
+        grid-column: 1 / span 1;
+      }
+}
 
 // ============================ MEDIA 1080 ============================
 
@@ -887,15 +894,7 @@ img {
 
     }
 
-    .projects1::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-top: 40px solid #b3b28d;
-        border-left: 40px solid #0F1624;
-        width: 0;
-    }
+
 
 
     .explore1 {
@@ -1035,13 +1034,19 @@ img {
         height: 300px;
     }
 
-    .footer1 {
-        display: none;
+    .article1 {
+       height: 100vh;
     }
 
     .article3 {
         justify-content: space-around;
     }
+    
+    .footer1 {
+        display: none;
+    }
+
+
     
 
 }
