@@ -840,6 +840,7 @@ img {
   }
   .map {
     flex-basis: 100%;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -851,6 +852,9 @@ img {
   .image-gallery > li {
     flex-basis: 100%;
     /* width: 100%; */
+  }
+  iframe {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -868,7 +872,7 @@ img {
     height: 100vh;
   }
   .article3 {
-    justify-content: space-around;
+    display: block;
   }
   .footer1 {
     display: none;
@@ -878,5 +882,8 @@ img {
   }
   .text1 {
     padding: 2px 20px;
+  }
+  .map {
+    padding-top: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
