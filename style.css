@@ -840,7 +840,9 @@ img {
   }
   .map {
     flex-basis: 100%;
-    padding-bottom: 50px;
+  }
+  .height1 {
+    height: 100%;
   }
 }
 @media (max-width: 768px) {
